@@ -6,7 +6,7 @@
     ec2:
      instance_type: t2.micro
      key_name: testing
-     image: ami-0c8b23b76e159ecd4
+     image: ami-039c2e0536e4309d2
      instance_tags:
         Name: Word
         Env: production
