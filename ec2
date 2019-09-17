@@ -1,0 +1,18 @@
+- name: ec2 launcher
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: launching ec2
+    ec2:
+     instance_type: t2.micro
+     key_name: testing
+     image: ami-0c8b23b76e159ecd4
+     instance_tags:
+        Name: Word
+        Env: production
+     region: ap-southeast-1
+     group: default
+     count: 1
+     vpc_subnet_id: subnet-0f6dd5eaa7d18c0e5
+     wait: no
+     assign_public_ip: yes
