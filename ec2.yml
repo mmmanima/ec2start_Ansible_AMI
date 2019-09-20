@@ -6,13 +6,13 @@
     ec2:
      instance_type: t2.micro
      key_name: testing
-     image: ami-039c2e0536e4309d2
+     image: ami-039c2e05xxxxxxxxxx
      instance_tags:
         Name: Word
         Env: production
      region: ap-southeast-1
      group: default
      count: 1
-     vpc_subnet_id: subnet-0f6dd5eaa7d18c0e5
+     vpc_subnet_id: subnet-0f6dd5eaxxxxxxxxxxxx
      wait: no
      assign_public_ip: yes
